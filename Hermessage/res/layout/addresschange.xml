@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="#E0FFFF">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout6" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/addresschangetitle"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_weight="1" android:padding="10sp" android:layout_height="match_parent">
+        <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:text="이             름"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/nameEdit" android:layout_width="wrap_content">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_weight="1" android:padding="10sp" android:layout_height="match_parent">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView01" android:layout_width="wrap_content" android:textColor="#000000" android:text="단말기  번호"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/phoneNumberEdit"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:padding="10sp" android:layout_weight="1" android:layout_height="match_parent">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView02" android:layout_width="wrap_content" android:textColor="#000000" android:text="이메일  주소"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/emailAddressEdit"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="fill_parent" android:layout_weight="1" android:padding="10sp" android:layout_height="match_parent">
+        <TextView android:layout_height="wrap_content" android:id="@+id/TextView03" android:layout_width="wrap_content" android:text="메              모" android:textColor="#000000"></TextView>
+        <EditText android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/memoEdit" android:layout_height="fill_parent"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:gravity="right" android:layout_height="match_parent" android:layout_weight="1" android:padding="10sp" android:orientation="horizontal">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/changeButton" android:text="변경"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/backButton" android:text="취소"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

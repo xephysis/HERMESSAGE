@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="imagedelete">
+		<item>첨부삭제</item>
+		<item>닫기</item>
+	</string-array>
+	<string-array name="imagechoice">
+		<item>즉시촬영</item>
+		<item>갤러리</item>
+	</string-array>
+	<string-array name="reference">
+		<item>E-mail</item>
+		<item>전화번호</item>
+	</string-array>
+</resources>

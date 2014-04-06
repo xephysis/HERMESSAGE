@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="top" android:orientation="vertical"
+	android:layout_height="fill_parent" android:layout_width="match_parent"
+	android:id="@+id/lineartest" android:background="@drawable/background2">
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/linearLayout1" android:orientation="vertical"
+		android:layout_height="wrap_content">
+		<TextView android:id="@+id/textView1" android:text="수신자 등록"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center" android:textColor="#000000" android:textSize="50sp"></TextView>
+		<LinearLayout android:id="@+id/linearLayout6"
+			android:layout_width="match_parent" android:gravity="center"
+			android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/linearLayout12" android:layout_height="match_parent"
+				android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+				<Button android:id="@+id/messageDraft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/savemessage"></Button>
+				<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="임시 저장"
+					android:textColor="#000000"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/linearLayout13" android:layout_height="match_parent"
+				android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+				<Button android:id="@+id/addressBookReference"
+					android:background="@drawable/addressreference"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+				<TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="주소록"
+					android:textColor="#000000"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:id="@+id/linearLayout14" android:layout_height="match_parent"
+				android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+				<Button android:id="@+id/messageSubmit" android:background="@drawable/messagesend"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+				<TextView android:id="@+id/textView4" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="메시지 전송"
+					android:textColor="#000000"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="match_parent" android:id="@+id/linearLayout10"
+			android:layout_width="wrap_content">
+			<CheckBox android:text="수신 확인" android:layout_height="wrap_content"
+				android:id="@+id/deliverycheck" android:layout_width="wrap_content"
+				android:textColor="#000000"></CheckBox>
+			<CheckBox android:text="읽음 확인" android:layout_height="wrap_content"
+				android:id="@+id/readcheck" android:layout_width="wrap_content"
+				android:textColor="#000000"></CheckBox>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout7"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/linearLayout8" android:orientation="horizontal"
+				android:layout_width="fill_parent">
+				<Button android:layout_height="wrap_content" android:text="예약 전송"
+					android:id="@+id/reservationSetting" android:layout_width="wrap_content"></Button>
+				<TextView android:layout_height="wrap_content"
+					android:hint="예약시간" android:layout_width="wrap_content" android:id="@+id/reservationdate"
+					android:textColor="#000000"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/linearLayout11" android:layout_width="match_parent">
+				<Button android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="만료시간 설정"
+					android:id="@+id/expirySetting"></Button>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:hint="만료 시간"
+					android:id="@+id/expirydate" android:textColor="#000000"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@+id/scrollAddress">
+		<LinearLayout android:layout_width="match_parent"
+			android:orientation="vertical" android:id="@+id/linearLayout3"
+			android:layout_gravity="right" android:gravity="right"
+			android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="horizontal" android:layout_height="wrap_content"
+				android:id="@+id/linearLayout5">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="match_parent" android:id="@+id/linearLayout4"
+					android:orientation="vertical" android:layout_weight="1">
+					<EditText android:layout_height="wrap_content" android:id="@+id/receiveText"
+						android:layout_weight="3" android:hint="주소를 입력하세요"
+						android:layout_width="fill_parent"></EditText>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="match_parent" android:id="@+id/linearLayout9"
+					android:orientation="vertical">
+					<Button android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:id="@+id/plusaddress"
+						android:background="@drawable/addaddress"></Button>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

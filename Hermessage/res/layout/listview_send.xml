@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="60dip"
+	android:padding="5dip"
+	android:background="@android:color/transparent" >
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:orientation="vertical" android:layout_weight="10">
+		<TextView android:layout_height="wrap_content" android:id="@+id/text" android:layout_width="wrap_content" android:textSize="20sp" android:textColor="#00ff00" android:text="TextView" android:layout_weight="1"></TextView>
+		<TextView android:text="TextView" android:id="@+id/textView3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+		<TextView android:visibility="visible" android:layout_height="wrap_content" android:id="@+id/rejectstate" android:layout_width="wrap_content" android:text="거절" android:textColor="#FFFFE0"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="wrap_content" android:layout_toLeftOf="@+id/checkBox1" android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_weight="0.5" android:gravity="center">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="수신확인" android:id="@+id/deliverystate" android:visibility="visible" android:textColor="#FFFFE0"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="읽음확인" android:id="@+id/readstate" android:visibility="visible" android:textColor="#FFFFE0"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout3" android:layout_height="match_parent" android:orientation="vertical" android:gravity="right" android:layout_weight="1">
+		<CheckBox android:layout_width="wrap_content" android:id="@+id/checkList" android:layout_height="wrap_content"></CheckBox>
+	</LinearLayout>
+</LinearLayout>

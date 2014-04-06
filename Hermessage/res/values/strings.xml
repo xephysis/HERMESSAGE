@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="hello">Hello World, Hermessage!</string>
+	<string name="app_name">Hermessage</string>
+	<string name="imcoming_message_ticker_text">
+		New text message:
+		<xliff:g id="text">%0$s</xliff:g>
+	</string>
+</resources>

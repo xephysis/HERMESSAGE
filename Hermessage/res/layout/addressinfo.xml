@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="#FFEBCD">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="horizontal" android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/addressinfotitle"></TextView>
+    </LinearLayout>
+    <LinearLayout android:padding="10sp" android:id="@+id/linearLayout1" android:layout_weight="1" android:layout_height="match_parent" android:layout_width="fill_parent">
+        <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="이             름" android:layout_width="wrap_content"></TextView>
+        <EditText android:focusable="false" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/nameInInfo">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:padding="10sp"
+		android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="match_parent">
+		<TextView android:id="@+id/textView5" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="단말기  번호"></TextView>
+		<EditText android:layout_weight="1" android:layout_width="wrap_content"
+			android:focusable="false" android:layout_height="wrap_content" android:id="@+id/phoneInInfo"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout7"
+		android:layout_width="fill_parent" android:padding="10sp"
+		android:layout_weight="1" android:layout_height="match_parent">
+		<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="이메일  주소"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="wrap_content"
+			android:focusable="false" android:id="@+id/emailInInfo"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout7"
+		android:layout_width="fill_parent" android:padding="10sp"
+		android:layout_weight="1" android:layout_height="match_parent">
+		<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="메              모"></TextView>
+		<EditText android:layout_weight="1" android:layout_width="wrap_content"
+			android:focusable="false" android:id="@+id/memoInInfo" android:layout_height="fill_parent"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout4" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_weight="1" android:orientation="horizontal" android:gravity="right" android:padding="10sp">
+		<Button android:layout_width="wrap_content" android:text="삭제" android:layout_height="wrap_content" android:id="@+id/deleteAddressInfo"></Button>
+		<Button android:layout_width="wrap_content" android:text="변경" android:layout_height="wrap_content" android:id="@+id/changeToAddress"></Button>
+		<Button android:layout_width="wrap_content" android:text="뒤로" android:layout_height="wrap_content" android:id="@+id/backToAddress"></Button>
+
+	</LinearLayout>
+</LinearLayout>

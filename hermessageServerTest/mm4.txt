@@ -1,0 +1,14 @@
+X-Mms-3GPP-MMS-Version: 1.0
+X-Mms-Transaction-ID: "TID-1835526265"
+To: 01010000003/TYPE=PLAIN
+Subject: dhfhhdhdh
+X-Mms-Expiry: Tue Jun 21 16:29:00 2011
+Content-Type: multipart/mixed;boundary="7075570669880987127"
+--7075570669880987127
+Content-Type: text/plain
+
+
+Content-ID: <MMBox/MID1887852115_1>
+Content-Location: papa.jpg
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="category1"
+		android:title="송수신 옵션" android:summary="Category 1에 대한 자세한 설명: 표시 안됨"
+		android:enabled="true">
+		<CheckBoxPreference android:key="SendDelivery"
+			android:title="수신확인 여부를 선택" android:summaryOn="보낸 메시지 수신 여부를 받습니다"
+			android:summaryOff="보낸 메시지 수신 여부를 받지 않습니다" android:defaultValue="false" />
+		<CheckBoxPreference android:key="SendRead"
+			android:title="읽음 확인 여부를 선택" android:summaryOn="보낸 메시지 읽음 여부를 받습니다"
+			android:summaryOff="보낸 메시지 읽음 여부를 받지 않습니다" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:key="category2"
+		android:title="단말기 정보 설정" android:summary="Category 2에 대한 자세한 설명: 표시 안됨"
+		android:enabled="true">
+		<EditTextPreference android:key="MyPhoneNumber"
+			android:title="기본 단말기 번호 설정" android:summary="기본 단말기 번호를 설정합니다" />
+	</PreferenceCategory>
+	<PreferenceCategory android:key="category3"
+		android:title="첨부파일 옵션 설정" android:summary="Category 2에 대한 자세한 설명: 표시 안됨"
+		android:enabled="true">
+		<EditTextPreference android:key="MaxWidth"
+			android:title="최대 수신 이미지 가로 픽셀" android:summary="최대로 받을 수 있는 이미지의 가로크기" />
+		<EditTextPreference android:key="MaxHeight"
+			android:title="최대 수신 이미지 세로 픽셀" android:summary="최대로 받을 수 있는 이미지의 세로크기" />	
+		<EditTextPreference android:key="MaxSize"
+			android:title="최대 수신 크기" android:summary="최대로 받을 수 있는 용량을 설정합니다" />	
+		<CheckBoxPreference android:key="ChoiceJPG"
+			android:title="JPG파일 수신 여부" android:summaryOn="JPG파일을 받습니다"
+			android:summaryOff="JPG파일을 받지 않습니다" android:defaultValue="false" />
+		<CheckBoxPreference android:key="ChoicePNG"
+			android:title="PNG파일 수신 여부" android:summaryOn="PNG파일을 받습니다"
+			android:summaryOff="PNG파일을 받지 않습니다" android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>
+

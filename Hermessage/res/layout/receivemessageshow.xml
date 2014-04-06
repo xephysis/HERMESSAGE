@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="#FFEBCD" android:scrollbars="vertical">
+	<LinearLayout android:layout_height="wrap_content"
+		android:padding="10sp" android:id="@+id/linearLayout1"
+		android:layout_width="match_parent">
+		<TextView android:layout_width="wrap_content" android:text="보낸    이"
+			android:id="@+id/textView1" android:layout_height="wrap_content"></TextView>
+		<EditText android:layout_weight="1" android:layout_width="wrap_content"
+			android:focusable="false" android:layout_height="wrap_content"
+			android:id="@+id/fromInReceive"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:padding="10sp" android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+		<TextView android:id="@+id/textView5" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="내        용"></TextView>
+		<EditText android:layout_weight="1" android:layout_width="wrap_content"
+			android:id="@+id/contentInReceive" android:focusable="false"
+			android:layout_height="wrap_content" android:scrollbars="vertical"
+			android:maxLines="5"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout7"
+		android:padding="10sp" android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+		<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="받은날짜"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="wrap_content"
+			android:id="@+id/dateInReceive" android:focusable="false"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:padding="20sp" android:id="@+id/linearLayout6"
+		android:layout_height="wrap_content" android:gravity="top|right">
+		<Button android:layout_width="wrap_content" android:text="삭제"
+			android:layout_height="wrap_content" android:id="@+id/deleteReceiveMessage"></Button>
+		<Button android:layout_width="wrap_content" android:text="뒤로"
+			android:layout_height="wrap_content" android:id="@+id/backToReceiveMessage"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:id="@+id/linearLayout4">
+		<ScrollView android:id="@+id/scrollView1"
+			android:layout_weight="10" android:layout_height="fill_parent"
+			android:layout_width="match_parent">
+			<LinearLayout android:layout_height="match_parent"
+				android:layout_width="match_parent" android:orientation="horizontal"
+				android:id="@+id/attachimageshow1">
+				<LinearLayout android:layout_weight="1"
+					android:layout_height="fill_parent" android:layout_width="match_parent"
+					android:orientation="vertical" android:id="@+id/receive_imageshow"></LinearLayout>
+				<LinearLayout android:layout_weight="1"
+					android:layout_height="fill_parent" android:layout_width="match_parent"
+					android:orientation="vertical" android:id="@+id/receive_imagetitle"></LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>
